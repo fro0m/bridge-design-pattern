@@ -20,6 +20,9 @@ public:
     void setName(QString t_name) {
         data->setItemName(t_name);
     }
+    const ItemData *constDataPointer() {
+        return data.constData();
+    }
 
 
 private:
